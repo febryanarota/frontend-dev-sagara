@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend MSIB Test
 
-## Getting Started
+This is a frontend project built using Next.js and Tailwind CSS.
 
-First, run the development server:
+## How to Run
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Option 1: Run Locally
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/febryanarota/frontend-dev-sagara
+    cd frontend-dev-sagara
+    ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **Start the development server**:
+    ```bash
+    npm run dev
+    ```
 
-## Learn More
+4. **Open your browser** and navigate to:
+    ```
+    http://localhost:3000
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+### Option 2: View Live Demo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can also view the live demo of this project on Vercel:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Live Demo**: [Vercel](https://frontend-dev-sagara.vercel.app/)
 
-## Deploy on Vercel
+## Stack Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Next.js**: React framework for building server-side rendering and static web applications.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Pages
+
+### Home Page
+
+![Home Page](./public/home.png)
+
+### Dashboard
+
+route: /dashboard
+  
+![Dashboard](./public/dashboard.png)
+
+### Students
+route: /students
+
+![Students](./public/students.png)
