@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.component-container {
+  background-color: white;
+  border-radius: 6px;
+  padding: 9px 15px;
+  border: 1px solid rgba(226, 232, 240, 1);
+
+}
+
+.page-container {
+  width: 100%;
+  padding: 1.25rem;
+}
+
+.btn-secondary {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+  color: #1C1C1C;
+  font-weight: 600;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #A51535;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #A51535;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.table_col p {
+  color: #8A92A6;
+  margin: 0;
+  padding: 2px; 
+  display: inline-block;
+}
+
+.table_col th {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 14px;
+}
+
+.table_body td {
+  padding: 1rem 0rem;
+  margin: 0rem 2rem;
+}
+
+.table_body p {
+  margin: 0 2rem;
+  text-align: center;
+  font-weight: 500;
+  display: inline-block;
+}
